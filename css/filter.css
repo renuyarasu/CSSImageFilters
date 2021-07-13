@@ -1,25 +1,25 @@
-/* Saturate  */
+/* Brightness   */
 
 
-/* filter: saturate  ([number | percentage]) */
+/* filter: brightness   ([number | percentage]) */
 
 
-/*saturate(0);*/
+/*brightness(0);*/
 
 .image_01 {
-    filter: saturate(100%);
+    filter: brightness(100%);
 }
 
 
-/*saturate(0.5);*/
+/*brightness(0.5);*/
 
 .image_02 {
-    filter: saturate(50%);
+    filter: brightness(50%);
 }
 
 
-/*saturate(12);*/
+/*brightness(12);*/
 
 .image_03 {
-    filter: saturate(200%);
+    filter: brightness(0%);
 }
