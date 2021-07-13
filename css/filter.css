@@ -1,25 +1,25 @@
-/* Opacity   */
+/* Drop-Shadow*/
 
 
-/* filter: opacity  ([number | percentage]) */
+/* filter: drop-shadow (<lengthX><lengthY><length blur><color>) */
 
 
-/*opacity(1);*/
+/*drop-shadow(1);*/
 
 .image_01 {
-    filter: opacity(100%);
+    /* filter: drop-shadow(); */
 }
 
 
-/*opacity(0.5);*/
+/*drop-shadow(0.5);*/
 
 .image_02 {
-    filter: opacity(50%);
+    filter: drop-shadow(10px 10px 10px #000);
 }
 
 
-/*opacity(0.1);*/
+/*drop-shadow(0.1);*/
 
 .image_03 {
-    filter: opacity(10%);
+    filter: drop-shadow(50px -50px 10px rgb(9, 51, 21));
 }
