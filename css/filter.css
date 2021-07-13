@@ -1,7 +1,10 @@
-/* Drop-Shadow*/
+/* Chaining Multiple Filters */
 
 
-/* filter: drop-shadow (<lengthX><lengthY><length blur><color>) */
+/* filter: sepia (1) contrast (1.2) drop-shadow (<lengthX><lengthY><length blur><color>) */
+
+
+/* Example: https://www.canva.com/photo-editor/app/ */
 
 
 /*drop-shadow(1);*/
@@ -14,12 +17,12 @@
 /*drop-shadow(0.5);*/
 
 .image_02 {
-    filter: drop-shadow(10px 10px 10px #000);
+    filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5);
 }
 
 
 /*drop-shadow(0.1);*/
 
 .image_03 {
-    filter: drop-shadow(50px -50px 10px rgb(9, 51, 21));
+    filter: drop-shadow(10px 10px 10px rgb(35, 179, 54)) sepia(100%) contrast(150%) brightness(1.5);
 }
