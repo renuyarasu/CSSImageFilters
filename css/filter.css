@@ -1,25 +1,25 @@
-/* Sepia */
+/* Saturate  */
 
 
-/* filter: sepia ([number | percentage]) */
+/* filter: saturate  ([number | percentage]) */
+
+
+/*saturate(0);*/
 
 .image_01 {
-    filter: sepia(0%);
+    filter: saturate(100%);
 }
 
 
-/*grayscale(0);*/
+/*saturate(0.5);*/
 
 .image_02 {
-    filter: sepia(50%);
+    filter: saturate(50%);
 }
 
 
-/*grayscale(0.5);*/
+/*saturate(12);*/
 
 .image_03 {
-    filter: sepia(100%);
+    filter: saturate(200%);
 }
-
-
-/*grayscale(1);*/
