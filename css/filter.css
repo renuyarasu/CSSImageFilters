@@ -1,22 +1,25 @@
-/* Hue-Rotate [Applies a huge rotation on the image] */
+/* Opacity   */
 
 
-/* filter: hue-rotate (<length>) */
+/* filter: opacity  ([number | percentage]) */
+
+
+/*opacity(1);*/
 
 .image_01 {
-    filter: hue-rotate(0);
+    filter: opacity(100%);
 }
+
+
+/*opacity(0.5);*/
 
 .image_02 {
-    filter: hue-rotate(120deg);
+    filter: opacity(50%);
 }
+
+
+/*opacity(0.1);*/
 
 .image_03 {
-    filter: hue-rotate(90deg);
-}
-
-.image_03:hover {
-    filter: hue-rotate(0deg);
-    cursor: pointer;
-    transition: 0.5s;
+    filter: opacity(10%);
 }
