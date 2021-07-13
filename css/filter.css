@@ -1,28 +1,48 @@
-/* Chaining Multiple Filters */
+/* Animating Filters */
 
 
 /* filter: sepia (1) contrast (1.2) drop-shadow (<lengthX><lengthY><length blur><color>) */
-
-
-/* Example: https://www.canva.com/photo-editor/app/ */
-
-
-/*drop-shadow(1);*/
 
 .image_01 {
     /* filter: drop-shadow(); */
 }
 
-
-/*drop-shadow(0.5);*/
-
 .image_02 {
     filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5);
+    transition: 2s;
 }
 
-
-/*drop-shadow(0.1);*/
+.image_02:hover {
+    transform: scaleX(2px);
+    cursor: pointer;
+}
 
 .image_03 {
     filter: drop-shadow(10px 10px 10px rgb(35, 179, 54)) sepia(100%) contrast(150%) brightness(1.5);
+}
+
+.image_03:hover {
+    animation: colorS;
+    cursor: pointer;
+}
+
+@keyframes colorS {
+    0% {
+        filter: drop-shadow(10px 10px 10px #000);
+    }
+    20% {
+        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg);
+    }
+    40% {
+        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5);
+    }
+    60% {
+        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5) contrast(150%);
+    }
+    80% {
+        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5) contrast(150%) sepia(100%);
+    }
+    100% {
+        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5) contrast(150%) invert(50%);
+    }
 }
