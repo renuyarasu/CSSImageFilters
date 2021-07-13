@@ -1,3 +1,25 @@
-.image_01{filter: grayscale(0%);} /*grayscale(0);*/
-.image_02{filter: grayscale(50%);}/*grayscale(0.5);*/
-.image_03{filter: grayscale(100%);}/*grayscale(1);*/
+/* Sepia */
+
+
+/* filter: sepia ([number | percentage]) */
+
+.image_01 {
+    filter: sepia(0%);
+}
+
+
+/*grayscale(0);*/
+
+.image_02 {
+    filter: sepia(50%);
+}
+
+
+/*grayscale(0.5);*/
+
+.image_03 {
+    filter: sepia(100%);
+}
+
+
+/*grayscale(1);*/
