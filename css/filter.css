@@ -1,25 +1,25 @@
-/* Brightness   */
+/* Contrast   */
 
 
-/* filter: brightness   ([number | percentage]) */
+/* filter: contrast   ([number | percentage]) */
 
 
-/*brightness(0);*/
+/*contrast(0);*/
 
 .image_01 {
-    filter: brightness(100%);
+    filter: contrast(0%);
 }
 
 
-/*brightness(0.5);*/
+/*contrast(0.5);*/
 
 .image_02 {
-    filter: brightness(50%);
+    filter: contrast(50%);
 }
 
 
-/*brightness(12);*/
+/*contrast(2);*/
 
 .image_03 {
-    filter: brightness(0%);
+    filter: contrast(200%);
 }
