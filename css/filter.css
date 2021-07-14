@@ -1,48 +1,43 @@
 /* Animating Filters */
 
-
-/* filter: sepia (1) contrast (1.2) drop-shadow (<lengthX><lengthY><length blur><color>) */
-
-.image_01 {
-    /* filter: drop-shadow(); */
-}
-
-.image_02 {
-    filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5);
-    transition: 2s;
-}
-
-.image_02:hover {
-    transform: scaleX(2px);
+.parent {
+    width: 400px;
+    height: 400px;
+    background-color: hsla(200, 100%, 20%);
+    margin-top: 2rem;
+    padding: 0;
     cursor: pointer;
 }
 
-.image_03 {
-    filter: drop-shadow(10px 10px 10px rgb(35, 179, 54)) sepia(100%) contrast(150%) brightness(1.5);
+.child {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(177, 13, 13);
+    transition: transform 1s cubic-bezier(0.6, 0, 0.93, 0.11);
+    animation: hover 1s ease-in forwards infinite alternate;
 }
 
-.image_03:hover {
-    animation: colorS;
-    cursor: pointer;
+.parent:hover .child {
+    animation-play-state: paused;
 }
 
-@keyframes colorS {
-    0% {
-        filter: drop-shadow(10px 10px 10px #000);
-    }
-    20% {
-        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg);
-    }
-    40% {
-        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5);
-    }
-    60% {
-        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5) contrast(150%);
-    }
-    80% {
-        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5) contrast(150%) sepia(100%);
-    }
+@keyframes hover {
     100% {
-        filter: drop-shadow(10px 10px 10px #000) hue-rotate(120deg) brightness(1.5) contrast(150%) invert(50%);
+        transform: translateX(100%);
+        background-color: hsla(200, 100%, 20%);
+    }
+    75% {
+        transform: translateY(100%) translateX(100%);
+    }
+    50% {
+        transform: translateX(100%) translateY(100%);
+        background-color: rgb(177, 13, 13);
+    }
+    25% {
+        transform: translateY(100%);
+    }
+    0% {
+        transform: translateX(0%) translateY(0%);
+        background-color: #fff;
     }
 }
